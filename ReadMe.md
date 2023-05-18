@@ -14,6 +14,11 @@ Rinse and repeat 1-5 until successful.
 
 Once ready, submit a PR.
 
+## Deploy
+
+choco apikey --key <<apikey>> --source https://push.chocolatey.org/
+choco push dbschema.9.3.0.nupkg --source https://push.chocolatey.org/
+
 ## Summary
 
 How do I create packages? See <https://docs.chocolatey.org/en-us/create/create-packages>
