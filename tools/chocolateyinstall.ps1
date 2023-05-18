@@ -21,7 +21,7 @@ $url64      = 'https://dbschema.com/download/DbSchema_9_3_0.msi' # 64bit URL her
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
-  fileType      = 'EXE_MSI_OR_MSU' #only one of these: exe, msi, msu
+  fileType      = 'msi' #only one of these: exe, msi, msu
   url           = $url
   url64bit      = $url64
   #file         = $fileLocation
@@ -33,9 +33,9 @@ $packageArgs = @{
   # You can also use checksum.exe (choco install checksum) and use it
   # e.g. checksum -t sha256 -f path\to\file
   checksum      = ''
-  checksumType  = 'sha256' #default is md5, can also be sha1, sha256 or sha512
+  checksumType  = 'md5' #default is md5, can also be sha1, sha256 or sha512
   checksum64    = 'ea3807d2d07c3c49a0257a5dc3eaacc5'
-  checksumType64= 'sha256' #default is checksumType
+  checksumType64= 'md5' #default is checksumType
 
   # MSI
   silentArgs    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`"" # ALLUSERS=1 DISABLEDESKTOPSHORTCUT=1 ADDDESKTOPICON=0 ADDSTARTMENU=0

@@ -1,3 +1,19 @@
+# DBSchema | Chocolatey
+
+## How to contribute
+
+[configuration file](./tools/chocolateyinstall.ps1)
+
+1. Update the download url | [files](https://dbschema.com/download.html)
+2. Update the md5 hashes | [hashes](https://dbschema.com/download/md5sums)
+3. `choco pack`
+4. Copy directory to VM
+5. `choco install dbschema --source .`
+
+Rinse and repeat 1-5 until successful.
+
+Once ready, submit a PR.
+
 ## Summary
 How do I create packages? See https://docs.chocolatey.org/en-us/create/create-packages
 
