@@ -16,8 +16,16 @@ Once ready, submit a PR.
 
 ## Deploy
 
-choco apikey --key <<apikey>> --source https://push.chocolatey.org/
+_(from admin console)_
+
+```powershell
+choco apikey --key APIKEY --source https://push.chocolatey.org/
 choco push dbschema.9.3.0.nupkg --source https://push.chocolatey.org/
+```
+
+## Moderation Queue Check
+
+<https://ch0.co/moderation>
 
 ## Summary
 
